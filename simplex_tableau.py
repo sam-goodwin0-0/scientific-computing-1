@@ -1,3 +1,7 @@
+#the below code produces a simplex tableau given initial data:
+# systems of equations A = b
+# constraints c
+
 import numpy as np
 
 #c = np.array([36,30,-3,-4],float)
@@ -144,5 +148,6 @@ def simplexMethod(c, A, b):
             return solution1, solution2, tableau[0][-1]
 
     return readSolution(A, tableau, basis)
+
 
 #print(simplexMethod(c, A, b))
